@@ -18,7 +18,7 @@ POST /api/upload          | Upload an image     | POST [http://localhost:9090//a
 git clone https://github.com/jojozhuang/restful-api-springboot.git
 mvn spring-boot:run
 ```
-Access http://localhost:8080/api/products in web browser or PostMan, you should get the following JSON as response.
+Access http://localhost:9090/api/products in web browser or PostMan, you should get the following JSON as response.
 ```json
 [  
    {
