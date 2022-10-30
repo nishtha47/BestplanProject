@@ -52,3 +52,30 @@ Access http://localhost:9090/api/products in web browser or PostMan, you should 
 mvn spring-boot:run
 ```
 
+Build Restful api Springboot application as Docker Image
+
+Create a Dockerfile
+
+Now Build Docker Image for Spring-Boot Application
+
+docker build -t best-plan .
+
+Run commands to verify images
+
+docker ps
+
+CONTAINER ID   IMAGE       COMMAND                  CREATED              STATUS              PORTS                    NAMES
+694ca3624c74   best-plan   "java -jar /restful-…"   About a minute ago   Up About a minute   0.0.0.0:9090->9090/tcp   agitated_bell
+
+docker images
+
+
+REPOSITORY      TAG       IMAGE ID       CREATED         SIZE
+best-plan       latest    a25a60dd87b3   3 minutes ago   697MB
+
+Run the spring boot application using dockerhub
+
+docker run -p 9090:9090 best-plan
+
+
+
